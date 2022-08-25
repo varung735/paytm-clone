@@ -17,7 +17,9 @@
                     colors: {
                         Blue: '#00BAF2',
                         DarkBlue: '#002970',
-                        offWhite: '#F5F7FA'
+                        offWhite: '#F5F7FA',
+                        hoverBlue: '#00afe3',
+                        hoverDarkBlue: '#0D3E80'
                     },
                     fontFamily: {
                        inter: ["Inter, sans-serif"]
@@ -78,6 +80,7 @@
                     Recharge & Pay-bills, book flights & movie tickets, <br> open a savings account, invest in stocks & mutual <br>
                     funds, and do a lot more.
                 </p>
+                <!-- button -->
                 <button class="title-btn mt-8 pt-2 pb-3 w-[250px] flex items-center justify-center border-2 border-black rounded-3xl pl-2 pr-2
                                 bg-black text-white hover:bg-white hover:text-black">
                     Download Paytm App
@@ -120,58 +123,256 @@
         <!-- Title Div ends here -->
 
         <!-- Features div Begins Here -->
-        <div class="features-container mt-40 bg-Blue">
+        <div class="features-container pl-20 pr-20 flex flex-col justify-center h-[380px] mt-40 bg-Blue">
 
             <!-- Heading -->
-            <h1 class="features-heading ml-[6%] mb-10 pt-10 text-white text-[40px] font-inter font-bold">Recharge & Pay Bills on Paytm</h1>
+            <h1 class="features-heading ml-[4%] mb-10 pt-10 text-white text-[40px] font-inter font-bold">Recharge & Pay Bills on Paytm</h1>
 
             <!-- This div contains features -->
-            <div class="features flex justify-evenly gap-[70px] pl-10 pr-10">
-                <div class="feature">
-                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="mobile-img" class="w-[64px] h-[64px]">
-                    <h3>Recharge</h3>
-                    <h3>Prepaid <br> mobile</h3>
-                    <div></div>
+            <div class="features pd-5 flex justify-evenly gap-[40px] pl-10 pr-10 text-white">
+                <!-- Feature 1 -->
+                <div class="feature w-[160px] h-[200px] hover:bg-hoverBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="mobile-img" class=" mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="ml-4 mt-2 text-[18px] font-light">Recharge</h3>
+                    <h3 class="ml-4 mb-6 font-semi-bold text-[15px] leading-[22px]">Prepaid <br> mobile 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
                 </div>
-                <div class="feature">
-                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png" alt="house-img" class="w-[64px] h-[64px]">
-                    <h3>Pay</h3>
-                    <h3>Electricity <br> Bill</h3>
-                    <div></div>
+                <!-- Feature 2 -->
+                <div class="feature w-[160px] h-[200px] hover:bg-hoverBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png" alt="house-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="mt-2 ml-4 text-[18px] font-light">Pay</h3>
+                    <h3  class="ml-4 mb-6 font-semi-bold text-[15px] leading-[22px]">Electricity <br> Bill 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
                 </div>
-                <div class="feature">
-                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png" alt="bulb-img" class="w-[64px] h-[64px]">
-                    <h3>Pay</h3>
-                    <h3>Electricity <br> Bill</h3>
-                    <div></div>
+                <!-- Feature 3 -->
+                <div class="feature w-[160px] h-[200px] hover:bg-hoverBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png" alt="bulb-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="mt-2 ml-4 text-[18px] font-light">Pay</h3>
+                    <h3 class="ml-4 font-semi-bold text-[15px] leading-[22px]">Electricity <br> Bill 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div> 
+                    </h3>
                 </div>
-                <div class="feature">
-                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png" alt="dish-img" class="w-[64px] h-[64px]">
-                    <h3>Recharge</h3>
-                    <h3>DTH <br> Connection</h3>
-                    <div></div>
+                <!-- Feature 4 -->
+                <div class="feature w-[160px] h-[200px] hover:bg-hoverBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png" alt="dish-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="mt-2 ml-4 text-[18px] font-light">Recharge</h3>
+                    <h3 class="ml-4 font-semi-bold text-[15px] leading-[22px]">DTH <br> Connection 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
                 </div>
-                <div class="feature">
-                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png" alt="cylinder-img" class="w-[64px] h-[64px]">
-                    <h3>Book</h3>
-                    <h3>Gas <br> Cylinder</h3>
-                    <div></div>
+                <!-- Feature 5 -->
+                <div class="feature w-[160px] h-[200px] hover:bg-hoverBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png" alt="cylinder-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="mt-2 ml-4 text-[18px] font-light">Book</h3>
+                    <h3 class="ml-4 font-semi-bold text-[15px] leading-[22px]">Gas <br> Cylinder 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
                 </div>
-                <div class="feature">
-                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png" alt="card-img" class="w-[64px] h-[64px]">
-                    <h3>Pay</h3>
-                    <h3>Credit <br> Card Bill</h3>
-                    <div></div>
+                <!-- Feature 6 -->
+                <div class="feature w-[160px] h-[200px] hover:bg-hoverBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png" alt="card-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="mt-2 ml-4 text-[18px] font-light">Pay</h3>
+                    <h3 class="ml-4 font-semi-bold text-[15px] leading-[22px]">Credit <br> Card Bill 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
                 </div>
-                <div class="feature">
-                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png" alt="stacks-img" class="w-[64px] h-[64px]">
-                    <h3>All</h3>
-                    <h3>Payment <br> Services</h3>
-                    <div></div>
+                <!-- Feature 7 -->
+                <div class="feature w-[160px] h-[200px] hover:bg-hoverBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png" alt="stacks-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="mt-2 ml-4 text-[18px] font-light">All</h3>
+                    <h3 class="ml-4 font-semi-bold text-[15px] leading-[22px]">Payment <br> Services 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
                 </div>
             </div>
+            <!-- feature ends -->
         </div>
         <!-- Features div Ends Here -->
+
+         <!-- Features 2nd div Begins Here -->
+         <div class="features-container pl-20 pr-20 flex flex-col justify-center h-[380px] bg-DarkBlue">
+
+            <!-- Heading -->
+            <h1 class="features-heading ml-[4%] mb-10 pt-10 text-white text-[40px] font-inter font-bold">Recharge & Pay Bills on Paytm</h1>
+
+            <!-- This div contains features -->
+            <div class="features pd-5 flex justify-evenly gap-[40px] pl-10 pr-10 text-white">
+                <!-- Feature 1 -->
+                <div class="feature w-[160px] h-[170px] hover:bg-hoverDarkBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="movie-img" class=" mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="ml-4 mb-6 leading-[20px] font-bold text-[18px]">Prepaid <br> mobile 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature w-[160px] h-[170px] hover:bg-hoverDarkBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png" alt="aeroplane-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3  class="ml-4 mb-6 leading-[20px] font-bold text-[18px]">Flight <br> Tickets 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature w-[160px] h-[170px] hover:bg-hoverDarkBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png" alt="bus-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="ml-4 leading-[20px] font-bold text-[18px]">Bus <br> Tickets
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div> 
+                    </h3>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature w-[160px] h-[170px] hover:bg-hoverDarkBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1626260495975.png" alt="train-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="ml-4 leading-[20px] font-bold text-[18px]">Train <br> Tickets 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
+                </div>
+                <!-- Feature 5 -->
+                <div class="feature w-[160px] h-[170px] hover:bg-hoverDarkBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1626259953707.png" alt="scooter-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="ml-4 leading-[20px] font-bold text-[18px]">Car & <br> Bikes 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
+                </div>
+                <!-- Feature 6 -->
+                <div class="feature w-[160px] h-[170px] hover:bg-hoverDarkBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png" alt="globe-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="ml-4 leading-[20px] font-bold text-[18px]">International <br> Flights
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
+                </div>
+                <!-- Feature 7 -->
+                <div class="feature w-[160px] h-[170px] hover:bg-hoverDarkBlue hover:rounded-md">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png" alt="invest-img" class="mt-5 ml-4 mb-6 w-[64px] h-[64px]">
+                    <h3 class="ml-4 leading-[20px] font-bold text-[18px]">Invest <br> in Stocks 
+                        <!--Arrow Rights through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div>
+                    </h3>
+                </div>
+            </div>
+            <!-- features ends -->
+
+        </div>
+        <!-- Features 2nd div Ends Here -->
+        
+        <!-- Paytm Payments Instruments Section Begins Here-->
+        <div class="ppt-container pt-[7%] pr-40 pl-40 pb-10 bg-offWhite">
+            <!-- Heading -->
+            <h1 class="ppt-heading mb-8 text-[48px] font-bold">Paytm Payment Instruments</h1>
+
+            <!-- 1st div  -->
+            <div class="ppt-one p-10 bg-white rounded-md flex justify-center">
+                <!-- content -->
+                <div class="ppt-content flex flex-col justify-center">
+                    <!-- img -->
+                    <div class="img flex items-center">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png" alt="wallet-img" class="h-[100px] w-[100px]">
+                        <h3 class="ml-3 font-semi-bold">Paytm <br> Wallet</h3>
+                    </div>
+                    <!-- content -->
+                    <div class="ppt-heading-subs mt-10">
+                        <h1 class="leading-[39px] text-[36px] font-bold">The Fastest Way to <br> Pay In-store & Online</h1>
+                        <p class="mt-8 leading-[26px] text-[17px] font-light">Load up your Paytm Wallet for free and make payments <br> in a jiffy at over 21 million stores, websites and apps.</p>
+                    </div>
+                    <!-- button -->
+                    <button class="title-btn mt-10 pt-2 pb-3 w-[250px] flex items-center justify-center border-2 border-black rounded-3xl pl-2 pr-2
+                    bg-black text-white hover:bg-white hover:text-black">
+                        Download Paytm App
+
+                        <!-- link for i-tunes -->
+                        <a href="#" class="ml-3">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" class="hover:fill-[#000000]" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 
+                            15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 
+                            3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 
+                            13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 
+                            15.3557ZM7.02439 
+                            3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="white"></path>
+                            </svg>
+                        </a>
+
+                        <!-- link for google play -->
+                        <a href="" class="ml-3">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 
+                                15.0894 0.0311427 
+                                15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 
+                                15.7912L10.0736 
+                                10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 
+                                7.10217L10.7211 
+                                5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 
+                                0.589868 0.0438429L7.83624
+                                7.47828L10.073 5.18317Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+
+                <!-- Image -->
+                <div class="img-div">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728701/1618577020961.png" alt="paytm-wallet-img" class="w-[560px] h-[460px]">
+                </div>
+            </div>
+            <!-- 1st div ends -->
+
+            <!-- 2nd div Begins -->
+            <div class="ppt-one mt-10 p-10 bg-white rounded-md flex justify-center">
+                <!-- content -->
+                <div class="ppt-content flex flex-col justify-center">
+                    <!-- img -->
+                    <div class="img flex items-center">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt="upi-img" class="h-[100px] w-[100px]">
+                        <h3 class="ml-3 font-semi-bold">UPI Money<br> Transfer</h3>
+                    </div>
+                    <!-- content -->
+                    <div class="ppt-heading-subs mt-10">
+                        <h1 class="leading-[39px] text-[36px] font-bold">Pay anyone directly <br> from your bank <br> account</h1>
+                        <p class="mt-8 leading-[26px] text-[17px] font-light">Pay anyone, everywhere. Make contactless & secure <br> 
+                            Payments in-stores or online using Paytm Wallet or <br> Directly from your Bank Account, send & recieve <br> 
+                            money from anyone.</p>
+                    </div>
+                    <!-- button -->
+                    <button class="title-btn mt-10 pt-2 pb-3 w-[250px] flex items-center justify-center border-2 border-black rounded-3xl pl-2 pr-2
+                    bg-black text-white hover:bg-white hover:text-black">
+                        Download Paytm App
+
+                        <!-- link for i-tunes -->
+                        <a href="#" class="ml-3">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" class="hover:fill-[#000000]" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 
+                            15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 
+                            3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 
+                            13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 
+                            15.3557ZM7.02439 
+                            3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="white"></path>
+                            </svg>
+                        </a>
+
+                        <!-- link for google play -->
+                        <a href="" class="ml-3">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 
+                                15.0894 0.0311427 
+                                15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 
+                                15.7912L10.0736 
+                                10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 
+                                7.10217L10.7211 
+                                5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 
+                                0.589868 0.0438429L7.83624
+                                7.47828L10.073 5.18317Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+
+                <!-- Image -->
+                <div class="img-div">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728702/1626342071104.png" alt="paytm-people-img" class="w-[560px] h-[460px]">
+                </div>
+            </div>
+            <!-- 2nd div ends -->
+        </div>
+        <!-- Paytm Payments Instruments Section Ends Here -->
+
     </main>
     <!-- Main Section Ends Here -->
 </body>
