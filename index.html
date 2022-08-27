@@ -14,12 +14,16 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    backgroundImage:{
+                        graphImg: "url('https://assetscdn1.paytm.com/frontendcommonweb/69678bc5.png')"
+                    },
                     colors: {
                         Blue: '#00BAF2',
                         DarkBlue: '#002970',
                         offWhite: '#F5F7FA',
                         hoverBlue: '#00afe3',
-                        hoverDarkBlue: '#0D3E80'
+                        hoverDarkBlue: '#0D3E80',
+                        darkerBlue: '#001B55'
                     },
                     fontFamily: {
                        inter: ["Inter, sans-serif"]
@@ -444,7 +448,8 @@
         <div class="fs-container mt-[10%] mb-20">
             <!-- Heading -->
             <h1 class="ml-[12%] mb-7 text-[48px] font-bold">Financial Services by Paytm</h1>
-            <!-- paytm payments bank div -->
+
+            <!-- paytm payments bank div begins here-->
             <div class="ppb-div mb-20 flex justify-evenly">
                 <!-- left div (content) -->
                 <div class="left-div flex flex-col justify-around">
@@ -455,12 +460,12 @@
                     <!-- Headings & Descriptions -->
                     <div class="ld-content">
                         <h1 class="leading-[50px] text-[40px] font-bold">India's most sincere <br> bank.</h1>
-                        <p class="leading-[26px] text-[20px] font-light">Paytm Payments Bank offers secure, transparent and <br> risk-free banking at your fingertips. With instant <br> account opening, virtual
+                        <p class="mt-9 leading-[26px] text-[20px] font-light">Paytm Payments Bank offers secure, transparent and <br> risk-free banking at your fingertips. With instant <br> account opening, virtual
                         debit card and zero balance <br> requirements, experience the future of banking today.</p>
                     </div>
                     <!-- button -->
                     <button class="title-btn pt-2 pb-3 w-[210px] h-[80px] flex items-center justify-center border-black rounded-md pl-2 pr-2
-                    bg-DarkBlue text-white hover:bg-Blue text-[20px] font-semi-bold">Learn More  <!--Right Arrow through div--> <div class="ml-6 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div></button>
+                    bg-DarkBlue text-white hover:bg-darkerBlue text-[20px] font-semi-bold">Learn More  <!--Right Arrow through div--> <div class="ml-6 border-[3px] border-white border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div></button>
                 </div>
 
                 <!-- Right div (image) -->
@@ -468,10 +473,142 @@
                     <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728826/1626076427497.png" alt="ppb-screen" class="w-[452px] h-[500]">
                 </div>
             </div>
+            <!-- paytm payments bank div ends here -->
 
+            <!-- paytm money div begins here -->
+            <div class="pm-container h-[620px] bg-offWhite bg-graphImg bg-cover bg-bottom bg-no-repeat flex justify-evenly items-center">
+                
+                <!-- left div (image) -->
+                <div class="left-div">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/788781/1626077377376.png" alt="paytm-money-screen-img" class="w-[473px] h-[427px]">
+                </div>
 
+                <!-- right div (content) -->
+                <div class="right-div">
+                    <!-- image -->
+                    <div class="rd-img">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/308774/1617696247991.png" alt="paytm-money-img" class="w-[144px] h-[54px] mb-7">
+                    </div>
+                    <!-- content -->
+                    <div class="rd-content">
+                        <h1 class="leading-[50px] text-[40px] font-bold">Build Long-term <br> Wealth & Achieve <br> your Goals</h1>
+                        <p class="mt-9 leading-[26px] text-[20px] font-light">Investing on Paytm Money is transparent, low-cost and <br> commission free. Buy stocks & 
+                            mutual funds that can <br> help you create wealth & realise your dreams.</p>
+                    </div>
+                    <!-- button -->
+                    <button class="title-btn mt-10 pt-2 pb-3 w-[170px] h-[50px] flex items-center justify-center border-black rounded-3xl pl-2 pr-2
+                    bg-DarkBlue text-white hover:bg-Blue font-semi-bold">Learn More  <!--Right Arrow through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div></button>
+                </div>
+
+            </div>
+            <!-- paytm money div ends here -->
+
+            <!-- Insurance div begins here -->
+            <div class="ppb-div h-[560px] flex justify-evenly items-center">
+                <!-- left div (content) -->
+                <div class="left-div flex flex-col justify-around">
+                    <!-- Image -->
+                    <div class="ld-img">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg" alt="paytm-insurance-img" class="w-[170px] h-[54px] mb-10">
+                    </div>
+                    <!-- Headings & Descriptions -->
+                    <div class="ld-content">
+                        <h1 class="leading-[50px] text-[40px] font-bold">Insurance made easy.</h1>
+                        <p class="mt-9 leading-[26px] text-[20px] font-light">Buying insurance does not have to be tedious, time- <br> consuming & confusing. 
+                            Paytm Insurance removes the <br> worry of getting insured by making it simple, <br> convenient & easy-to-understand</p>
+                    </div>
+                    <!-- button -->
+                    <button class="title-btn mt-10 pt-2 pb-3 w-[170px] h-[50px] flex items-center justify-center border-black rounded-3xl pl-2 pr-2
+                    bg-DarkBlue text-white hover:bg-Blue font-semi-bold">Learn More  <!--Right Arrow through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div></button>
+                </div>
+
+                <!-- Right div (image) -->
+                <div class="div right-div">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/788790/1653913927257.png" alt="insurance-screen" class="w-[433px] h-[399px]">
+                </div>
+            </div>
+            <!-- Insurance div ends here -->
+
+            <!-- Personal loan div begins here -->
+            <div class="pm-container h-[620px] bg-offWhite bg-cover bg-bottom bg-no-repeat flex justify-evenly items-center">
+                
+                <!-- left div (image) -->
+                <div class="left-div">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850765/1655987252365.png" alt="personal-loan-screen-img" class="w-[433px] h-[437px]">
+                </div>
+
+                <!-- right div (content) -->
+                <div class="right-div">
+                    <!-- image -->
+                    <div class="rd-img">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/308777/1617695287770.png" alt="personal-loan-img" class="w-[176px] h-[54px] mb-7">
+                    </div>
+                    <!-- content -->
+                    <div class="rd-content">
+                        <h1 class="leading-[50px] text-[40px] font-bold">Get a Personal Loan in <br> 2 Minutes</h1>
+                        <p class="mt-9 leading-[26px] text-[20px] font-light">Paytm offers India's quickest multi-purpose, hassle-free loan. It <br> is 100%
+                         digital, transparent and paperless</p>
+                    </div>
+                    <!-- button -->
+                    <button class="title-btn mt-10 pt-2 pb-3 w-[170px] h-[50px] flex items-center justify-center border-black rounded-3xl pl-2 pr-2
+                    bg-DarkBlue text-white hover:bg-Blue font-semi-bold">Learn More  <!--Right Arrow through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div></button>
+                </div>
+
+            </div>
+            <!-- Personal loan div ends here -->
         </div>
         <!-- Financial Services Section Ends Here -->
+
+        <!-- Business Services Section Begins Here -->
+        <div class="bs-section pt-7 pr-40 pl-40 pb-10">
+
+            <!-- Heading -->
+            <h1 class="bs-heading mb-7 mb-8 text-[48px] font-bold">Business Services by Paytm</h1>
+
+             <!-- 1st div  -->
+             <div class="bs-one p-20 pl-20 pr-0 bg-offWhite rounded-md flex items-center justify-between">
+                <!-- content -->
+                <div class="bs-content flex flex-col justify-center">
+                    <!-- content -->
+                    <div class="bs-heading-subs">
+                        <h1 class="leading-[39px] text-[36px] font-bold">Accept Payments <br> online with ease</h1>
+                        <p class="mt-8 leading-[26px] text-[17px] font-light">Grow your business with the payment gateway that <br> powers India's largest brands and even the Paytm app</p>
+                    </div>
+                    <!-- button -->
+                    <button class="title-btn mt-10 pt-2 pb-3 w-[170px] h-[50px] flex items-center justify-center border-black rounded-3xl pl-2 pr-2
+                    bg-DarkBlue text-white hover:bg-Blue font-semi-bold">Learn More  <!--Right Arrow through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div></button>
+                </div>
+
+                <!-- Image -->
+                <div class="img-div relative">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853877/1626077000254.png" alt="paytm-wallet-img" class="w-[433px] h-[464px]">
+                </div>
+            </div>
+            <!-- 1st div ends -->
+
+            <!-- 2nd div Begins -->
+            <div class="bs-one mt-10 p-20 pl-20 pr-0 bg-offWhite rounded-md flex items-center justify-between">
+                <!-- content -->
+                <div class="bs-content flex flex-col justify-center">
+                    <!-- content -->
+                    <div class="bs-heading-subs">
+                        <h1 class="leading-[39px] text-[36px] font-bold">In-shop payments <br> powered by Paytm.</h1>
+                        <p class="mt-8 leading-[26px] text-[17px] font-light">Millions of small & big businesses use Paytm to accept <br> payments anywhere any time with a wide range of
+                        <br> solutions for all kind of merchants</p>
+                    </div>
+                    <!-- button -->
+                    <button class="title-btn mt-10 pt-2 pb-3 w-[170px] h-[50px] flex items-center justify-center border-black rounded-3xl pl-2 pr-2
+                    bg-DarkBlue text-white hover:bg-Blue font-semi-bold">Learn More  <!--Right Arrow through div--> <div class="ml-2 border-[3px] border-l-0 border-b-0 w-[10px] h-[10px] rotate-45 inline-block"></div></button>
+                </div>
+
+                <!-- Image -->
+                <div class="img-div relative">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853880/1656675942486.png" alt="paytm-wallet-img" class="w-[433px] h-[341px]">
+                </div>
+            </div>
+            <!-- 2nd div ends -->
+        </div>
+        <!-- Business Services Section Ends Here -->
     </main>
     <!-- Main Section Ends Here -->
 </body>
