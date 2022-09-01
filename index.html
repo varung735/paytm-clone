@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
     <title>Paytm: Secure & Fast UPI Payment, Recharge Mobile & Pay Bills</title>
+    <script src="https://kit.fontawesome.com/904b4c6dd9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -42,7 +43,7 @@
         }
     </script>
 </head>
-<body class="font-inter">
+<body class="font-inter w-full ">
     <!-- Navbar Begins Here -->
     <nav id="nav-container" class="flex justify-around items-center mt-5 mb-5">
         <!-- logo div -->
@@ -50,7 +51,7 @@
             <img src="https://assetscdn1.paytm.com/images/catalog/category/5165/paytm_logo.png" alt="paytm-logo.png" class="w-[180px] h-[55px]">
         </div>
         <!-- links div -->
-        <div class="">
+        <div class="lg:block md:hidden">
             <ul class="nav-links flex justify-around gap-8 font-inter font-semi-bold">
                 <li class="nav-link hover:cursor-pointer">Paytm for Customer</li>
                 <li class="nav-link hover:cursor-pointer">Paytm for Business</li>
@@ -59,10 +60,18 @@
                 <li class="nav-link hover:cursor-pointer">Career</li>
             </ul>
         </div>
+        <!-- Bar Icon -->
+        <i class="fa-solid fa-bars lg:hidden md:inline"></i>
         <!-- sign-in button div -->
-        <div class="nav-btn-div flex justify-between items-center bg-DarkBlue hover:bg-Blue rounded-3xl h-10">
+        <div class="nav-btn-div lg:flex justify-between items-center bg-Blue hover:bg-DarkBlue rounded-3xl h-10 md:hidden group">
             <button class="nav-btn ml-4 mr-3">Sign In</button>
-            <img src="https://assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg" alt="user-avatar" class="w-10 h-8">	
+            
+        <svg class="mr-1" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="17" cy="17" r="17" fill="#243c5a" class="group-hover:fill-[#00BAF2]"/>
+            <circle cx="17" cy="14.7331" r="7.93333" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07898 28.048C6.58399 23.4894 11.4312 20.3999 16.9999 20.3999C22.5687 
+            20.3999 27.4159 23.4894 29.9209 28.048C26.8029 31.691 22.1711 33.9999 16.9999 33.9999C11.8288 33.9999 7.19693 31.691 4.07898 28.048Z" fill="white"/>
+        </svg>	
         </div>
     </nav>
     <!-- Navbar Ends Here -->
@@ -78,24 +87,24 @@
     <main id="main-container">
 
         <!-- Title div begins here -->
-        <div class="title-div flex justify-between items-center ml-20 mt-[3%]">
+        <div class="title-div flex lg:flex-row lg:justify-between lg:items-center lg:ml-20 lg:mt-[3%] md:flex-col-reverse md:justify-center md:items-center">
 
             <!-- This div contains title contents -->
             <div class="title-contents flex-col justify-start items-center w-1/2 ml-10">
-                <img src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="paytm-logo" class="w-[70px] h-[70px]">
-                <h1 class="title-heading mt-10 font-inter font-bold text-[65px] leading-[85px]">India's Most-loved Payment's App</h1>
-                <p class="title-content mt-3 font-inter font-light text-[20px]">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="paytm-logo" class="w-[70px] h-[70px] lg:inline md:hidden">
+                <h1 class="title-heading mt-10 font-inter font-bold text-[65px] leading-[85px] md:mb-10">India's Most-loved Payment's App</h1>
+                <p class="title-content mt-3 font-inter font-light text-[20px] md:mb-10">
                     Recharge & Pay-bills, book flights & movie tickets, <br> open a savings account, invest in stocks & mutual <br>
                     funds, and do a lot more.
                 </p>
                 <!-- button -->
                 <button class="title-btn mt-8 pt-2 pb-3 w-[250px] flex items-center justify-center border-2 border-black rounded-3xl pl-2 pr-2
-                                bg-black text-white hover:bg-white hover:text-black">
+                                bg-black text-white hover:bg-white hover:text-black group">
                     Download Paytm App
 
                     <!-- link for i-tunes -->
                     <a href="#" class="ml-3">
-                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" class="hover:fill-[#000000]" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="group-hover:invert" width="14" height="16" viewBox="0 0 14 16" fill="none" class="hover:fill-[#000000]" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 
                         15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 
                         3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 
@@ -107,7 +116,7 @@
 
                     <!-- link for google play -->
                     <a href="" class="ml-3">
-                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="group-hover:invert" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 
                             15.0894 0.0311427 
                             15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 
@@ -123,7 +132,7 @@
             </div>
             
             <!-- This div contains title image -->
-            <div class="title-img w-1/2 ml-60 flex justify-end">
+            <div class="title-img w-1/2 lg:ml-60 md:mt-10 md:mb-10 flex justify-end">
                 <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1656568118664.png" alt="paytm-img" class="w-[530px] h-[505px]">
             </div>
 
@@ -131,13 +140,13 @@
         <!-- Title Div ends here -->
 
         <!-- Features div Begins Here -->
-        <div class="features-container pl-20 pr-20 flex flex-col justify-center h-[380px] mt-40 bg-Blue">
+        <div class="features-container pl-20 pr-20 flex flex-col justify-center lg:h-[380px] md:h-auto md:pb-10 mt-40 bg-Blue">
 
             <!-- Heading -->
             <h1 class="features-heading ml-[4%] mb-10 pt-10 text-white text-[40px] font-inter font-bold">Recharge & Pay Bills on Paytm</h1>
 
             <!-- This div contains features -->
-            <div class="features pd-5 flex justify-evenly gap-[40px] pl-10 pr-10 text-white">
+            <div class="features pd-5 flex lg:flex-nowrap justify-evenly gap-[40px] pl-10 pr-10 text-white md:flex-wrap">
                 <!-- Feature 1 -->
                 <div class="feature w-[160px] h-[200px] hover:bg-hoverBlue hover:rounded-md">
                     <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="mobile-img" class=" mt-5 ml-4 mb-6 w-[64px] h-[64px]">
@@ -200,13 +209,13 @@
         <!-- Features div Ends Here -->
 
          <!-- Features 2nd div Begins Here -->
-         <div class="features-container pl-20 pr-20 flex flex-col justify-center h-[380px] bg-DarkBlue">
+         <div class="features-container pl-20 pr-20 flex flex-col justify-center h-[380px] md:h-auto md:pb-10 bg-DarkBlue">
 
             <!-- Heading -->
             <h1 class="features-heading ml-[4%] mb-10 pt-10 text-white text-[40px] font-inter font-bold">Recharge & Pay Bills on Paytm</h1>
 
             <!-- This div contains features -->
-            <div class="features pd-5 flex justify-evenly gap-[40px] pl-10 pr-10 text-white">
+            <div class="features pd-5 flex lg:flex-nowrap justify-evenly gap-[40px] pl-10 pr-10 text-white md:flex-wrap">
                 <!-- Feature 1 -->
                 <div class="feature w-[160px] h-[170px] hover:bg-hoverDarkBlue hover:rounded-md">
                     <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="movie-img" class=" mt-5 ml-4 mb-6 w-[64px] h-[64px]">
@@ -268,13 +277,13 @@
             <h1 class="ppt-heading mb-8 text-[48px] font-bold">Paytm Payment Instruments</h1>
 
             <!-- 1st div  -->
-            <div class="ppt-one p-10 bg-white rounded-md flex justify-center">
+            <div class="ppt-one p-10 bg-white rounded-md flex lg:flex-row lg:justify-center md:flex-col-reverse">
                 <!-- content -->
                 <div class="ppt-content flex flex-col justify-center">
                     <!-- img -->
                     <div class="img flex items-center">
-                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png" alt="wallet-img" class="h-[80px] w-[80px]">
-                        <h3 class="ml-3 font-semi-bold">Paytm <br> Wallet</h3>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png" alt="wallet-img" class="h-[80px] w-[80px] lg:inline md:hidden">
+                        <h3 class="ml-3 font-semi-bold lg:inline md:hidden">Paytm <br> Wallet</h3>
                     </div>
                     <!-- content -->
                     <div class="ppt-heading-subs mt-10">
@@ -283,12 +292,12 @@
                     </div>
                     <!-- button -->
                     <button class="title-btn mt-10 pt-2 pb-3 w-[250px] flex items-center justify-center border-2 border-black rounded-3xl pl-2 pr-2
-                    bg-black text-white hover:bg-white hover:text-black">
+                    bg-black text-white hover:bg-white hover:text-black group">
                         Download Paytm App
 
                         <!-- link for i-tunes -->
                         <a href="#" class="ml-3">
-                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" class="hover:fill-[#000000]" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="group-hover:invert" width="14" height="16" viewBox="0 0 14 16" fill="none" class="hover:fill-[#000000]" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 
                             15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 
                             3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 
@@ -300,7 +309,7 @@
 
                         <!-- link for google play -->
                         <a href="" class="ml-3">
-                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="group-hover:invert" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 
                                 15.0894 0.0311427 
                                 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 
@@ -323,12 +332,12 @@
             <!-- 1st div ends -->
 
             <!-- 2nd div Begins -->
-            <div class="ppt-one mt-10 p-10 bg-white rounded-md flex justify-center">
+            <div class="ppt-one mt-10 p-10 bg-white rounded-md flex lg:flex-row justify-center md:flex-col-reverse">
                 <!-- content -->
                 <div class="ppt-content flex flex-col justify-center">
                     <!-- img -->
                     <div class="img flex items-center">
-                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt="upi-img" class="h-[80px] w-[80px]">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt="upi-img" class="h-[80px] w-[80px] lg:inline md:hidden">
                         <h3 class="ml-3 font-semi-bold">UPI Money<br> Transfer</h3>
                     </div>
                     <!-- content -->
@@ -340,12 +349,13 @@
                     </div>
                     <!-- button -->
                     <button class="title-btn mt-10 pt-2 pb-3 w-[250px] flex items-center justify-center border-2 border-black rounded-3xl pl-2 pr-2
-                    bg-black text-white hover:bg-white hover:text-black">
+                    bg-black text-white hover:bg-white hover:text-black group">
                         Download Paytm App
 
                         <!-- link for i-tunes -->
                         <a href="#" class="ml-3">
-                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" class="hover:fill-[#000000]" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="group-hover:invert" width="14" height="16" viewBox="0 0 14 16" fill="none" class="hover:fill-[#000000]" 
+                            xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 
                             15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 
                             3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 
@@ -357,7 +367,7 @@
 
                         <!-- link for google play -->
                         <a href="" class="ml-3">
-                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="group-hover:invert" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 
                                 15.0894 0.0311427 
                                 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 
@@ -380,12 +390,12 @@
             <!-- 2nd div ends -->
 
             <!-- 3rd div begins -->
-            <div class="ppt-one p-10 bg-white rounded-md mt-10 flex justify-center">
+            <div class="ppt-one p-10 bg-white rounded-md mt-10 flex lg:flex-row justify-center md:flex-col-reverse">
                 <!-- content -->
                 <div class="ppt-content flex flex-col justify-center mr-40">
                     <!-- img -->
                     <div class="img flex items-center">
-                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307191/1613622537678.png" alt="post-paid-img" class="h-[80px] w-[188px]">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307191/1613622537678.png" alt="post-paid-img" class="h-[80px] w-[188px] lg:inline md:hidden">
                     </div>
                     <!-- content -->
                     <div class="ppt-heading-subs mt-10">
@@ -406,10 +416,10 @@
             <!-- 3rd div ends -->
 
             <!-- Card (i mean cards like credit cards & stuff) Sections Begins Here -->
-            <div class="card-container mt-10 flex gap-10 items-end">
+            <div class="card-container mt-10 flex gap-10 lg:flex-row items-end md:flex-col">
                 
                 <!-- Left Div Begins Here-->
-                <div class="left-div h-full w-1/2 mx-auto p-20 pt-10 pb-0 bg-white rounded-2xl gap-10">
+                <div class="left-div h-full lg:w-1/2 md:w-full mx-auto p-20 pt-10 pb-0 bg-white rounded-2xl gap-10">
                     <!-- img div -->
                     <div class="l-img">
                         <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640242865113.png" alt="paytm-hdfc-img" class="w-[185px] h-[77px] mb-10">
@@ -427,7 +437,7 @@
                 <!-- Left Div Ends Here -->
 
                 <!-- Right Div Begins Here-->
-                <div class="right-div h-full w-1/2 mx-auto p-20 pt-10 pb-0 bg-white rounded-2xl gap-10">
+                <div class="right-div h-full lg:w-1/2 md:w-full mx-auto p-20 pt-10 pb-0 bg-white rounded-2xl gap-10">
                     <!-- img div -->
                     <div class="rd-img pt-6">
                         <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1640242163727.png" alt="paytm-sbi-img" class="w-[197px] h-[19px] mt-[8%] mb-10">
@@ -454,17 +464,17 @@
             <h1 class="ml-[12%] mb-7 text-[48px] font-bold">Financial Services by Paytm</h1>
 
             <!-- paytm payments bank div begins here-->
-            <div class="ppb-div mb-20 flex justify-evenly">
+            <div class="ppb-div mb-20 flex lg:flex-row lg:justify-evenly md:flex-col-reverse md:justify-center md:items-center">
                 <!-- left div (content) -->
-                <div class="left-div flex flex-col justify-around">
+                <div class="left-div flex flex-col lg:justify-around">
                     <!-- Image -->
                     <div class="ld-img">
-                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307193/1617696576778.png" alt="paytm-payments-bank-img" class="w-[212px] h-[35px]">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307193/1617696576778.png" alt="paytm-payments-bank-img" class="w-[212px] h-[35px] lg:mb-10 lg:inline md:hidden">
                     </div>
                     <!-- Headings & Descriptions -->
                     <div class="ld-content">
                         <h1 class="leading-[50px] text-[40px] font-bold">India's most sincere <br> bank.</h1>
-                        <p class="mt-9 leading-[26px] text-[20px] font-light">Paytm Payments Bank offers secure, transparent and <br> risk-free banking at your fingertips. With instant <br> account opening, virtual
+                        <p class="mt-9 md:mb-10 lg:leading-[26px] text-[20px] font-light">Paytm Payments Bank offers secure, transparent and <br> risk-free banking at your fingertips. With instant <br> account opening, virtual
                         debit card and zero balance <br> requirements, experience the future of banking today.</p>
                     </div>
                     <!-- button -->
@@ -474,13 +484,13 @@
 
                 <!-- Right div (image) -->
                 <div class="div right-div">
-                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728826/1626076427497.png" alt="ppb-screen" class="w-[452px] h-[500]">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728826/1626076427497.png" alt="ppb-screen" class="w-[452px] h-[500] lg:m-0 md:mt-10 md:mb-20">
                 </div>
             </div>
             <!-- paytm payments bank div ends here -->
 
             <!-- paytm money div begins here -->
-            <div class="pm-container h-[620px] bg-offWhite bg-graphImg bg-cover bg-bottom bg-no-repeat flex justify-evenly items-center">
+            <div class="pm-container lg:h-[620px] lg:p-0 md:pt-10 md:pb-10 bg-offWhite bg-graphImg bg-cover bg-bottom bg-no-repeat flex lg:flex-row lg:justify-evenly lg:items-center md:flex-col md:justify-center md:items-center">
                 
                 <!-- left div (image) -->
                 <div class="left-div">
@@ -491,11 +501,11 @@
                 <div class="right-div">
                     <!-- image -->
                     <div class="rd-img">
-                        <img src="https://assetscdn1.paytm.com/images/catalog/view/308774/1617696247991.png" alt="paytm-money-img" class="w-[144px] h-[54px] mb-7">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/308774/1617696247991.png" alt="paytm-money-img" class="w-[144px] h-[54px] lg:mb-7 lg:inline md:hidden">
                     </div>
                     <!-- content -->
                     <div class="rd-content">
-                        <h1 class="leading-[50px] text-[40px] font-bold">Build Long-term <br> Wealth & Achieve <br> your Goals</h1>
+                        <h1 class="leading-[50px] text-[40px] font-bold lg:mt-0 md:mt-10">Build Long-term <br> Wealth & Achieve <br> your Goals</h1>
                         <p class="mt-9 leading-[26px] text-[20px] font-light">Investing on Paytm Money is transparent, low-cost and <br> commission free. Buy stocks & 
                             mutual funds that can <br> help you create wealth & realise your dreams.</p>
                     </div>
@@ -508,16 +518,16 @@
             <!-- paytm money div ends here -->
 
             <!-- Insurance div begins here -->
-            <div class="ppb-div h-[560px] flex justify-evenly items-center">
+            <div class="ppb-div lg:h-[560px] lg:p-0 md:pt-10 md:pb-10 flex lg:justify-evenly lg:items-center md:flex-col-reverse md:items-center">
                 <!-- left div (content) -->
                 <div class="left-div flex flex-col justify-around">
                     <!-- Image -->
                     <div class="ld-img">
-                        <img src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg" alt="paytm-insurance-img" class="w-[170px] h-[54px] mb-10">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg" alt="paytm-insurance-img" class="w-[170px] h-[54px] mb-10 lg:inline md:hidden">
                     </div>
                     <!-- Headings & Descriptions -->
                     <div class="ld-content">
-                        <h1 class="leading-[50px] text-[40px] font-bold">Insurance made easy.</h1>
+                        <h1 class="leading-[50px] text-[40px] font-bold lg:mt-0 md:mt-10">Insurance made easy.</h1>
                         <p class="mt-9 leading-[26px] text-[20px] font-light">Buying insurance does not have to be tedious, time- <br> consuming & confusing. 
                             Paytm Insurance removes the <br> worry of getting insured by making it simple, <br> convenient & easy-to-understand</p>
                     </div>
@@ -534,7 +544,7 @@
             <!-- Insurance div ends here -->
 
             <!-- Personal loan div begins here -->
-            <div class="pm-container h-[620px] bg-offWhite bg-cover bg-bottom bg-no-repeat flex justify-evenly items-center">
+            <div class="pm-container lg:h-[620px] lg:p-0 md:pt-10 md:pb-10 bg-offWhite bg-cover bg-bottom bg-no-repeat flex lg:flex-row lg:justify-evenly lg:items-center md:flex-col md:items-center">
                 
                 <!-- left div (image) -->
                 <div class="left-div">
@@ -545,11 +555,11 @@
                 <div class="right-div">
                     <!-- image -->
                     <div class="rd-img">
-                        <img src="https://assetscdn1.paytm.com/images/catalog/view/308777/1617695287770.png" alt="personal-loan-img" class="w-[176px] h-[54px] mb-7">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/308777/1617695287770.png" alt="personal-loan-img" class="w-[176px] h-[54px] mb-7 lg:inline md:hidden">
                     </div>
                     <!-- content -->
                     <div class="rd-content">
-                        <h1 class="leading-[50px] text-[40px] font-bold">Get a Personal Loan in <br> 2 Minutes</h1>
+                        <h1 class="leading-[50px] text-[40px] font-bold lg:mt-0 md:mt-10">Get a Personal Loan in <br> 2 Minutes</h1>
                         <p class="mt-9 leading-[26px] text-[20px] font-light">Paytm offers India's quickest multi-purpose, hassle-free loan. It <br> is 100%
                          digital, transparent and paperless</p>
                     </div>
@@ -570,12 +580,12 @@
             <h1 class="bs-heading mb-7 mb-8 text-[48px] font-bold">Business Services by Paytm</h1>
 
              <!-- 1st div  -->
-             <div class="bs-one p-20 pl-20 pr-0 bg-offWhite rounded-md flex items-center justify-between">
+             <div class="bs-one p-20 pl-20 lg:pr-0 md:pr-20 bg-offWhite rounded-md flex lg:flex-row lg:items-center lg:justify-between md:flex-col-reverse md:items-center md:justify-center">
                 <!-- content -->
                 <div class="bs-content flex flex-col justify-center">
                     <!-- content -->
                     <div class="bs-heading-subs">
-                        <h1 class="leading-[39px] text-[36px] font-bold">Accept Payments <br> online with ease</h1>
+                        <h1 class="leading-[39px] text-[36px] font-bold lg:mt-0 md:mt-10">Accept Payments <br> online with ease</h1>
                         <p class="mt-8 leading-[26px] text-[17px] font-light">Grow your business with the payment gateway that <br> powers India's largest brands and even the Paytm app</p>
                     </div>
                     <!-- button -->
@@ -591,12 +601,12 @@
             <!-- 1st div ends -->
 
             <!-- 2nd div Begins -->
-            <div class="bs-one mt-10 p-20 pl-20 pr-0 bg-offWhite rounded-md flex items-center justify-between">
+            <div class="bs-one mt-10 p-20 pl-20 lg:pr-0 md:pr-20 bg-offWhite rounded-md flex lg:flex-row lg:items-center lg:justify-between md:flex-col-reverse md:justify-center md:items-center">
                 <!-- content -->
                 <div class="bs-content flex flex-col justify-center">
                     <!-- content -->
                     <div class="bs-heading-subs">
-                        <h1 class="leading-[39px] text-[36px] font-bold">In-shop payments <br> powered by Paytm.</h1>
+                        <h1 class="leading-[39px] text-[36px] font-bold lg:mt-0 md:mt-10">In-shop payments <br> powered by Paytm.</h1>
                         <p class="mt-8 leading-[26px] text-[17px] font-light">Millions of small & big businesses use Paytm to accept <br> payments anywhere any time with a wide range of
                         <br> solutions for all kind of merchants</p>
                     </div>
@@ -620,7 +630,7 @@
             <h1 class="ml-40 leading-[48px] text-[40px] font-bold">Business Tools to help <br> your business grow</h1>
 
             <!-- tools div -->
-            <div class="tools mt-10 flex gap-[70px] justify-center">
+            <div class="tools mt-10 flex gap-[70px] lg:flex-nowrap justify-center md:flex-wrap">
                 <!-- 1st tool -->
                 <div class="tool flex flex-col justify-center">
                     <!-- image -->
@@ -680,7 +690,7 @@
         <!-- Business Tools Section Ends Here -->
 
         <!-- Paytm money & travel section Begins Here -->
-        <div class="pmt-container pt-10 pb-10 mt-10 bg-weirdWhite flex flex-col justify-center items-center">
+        <div class="pmt-container pt-10 pb-10 mt-10 lg:pr-0 md:pr-20 bg-weirdWhite flex flex-col justify-center items-center">
 
             <!-- upper div with paytm money-->
             <div class="upper-div pr-10 pt-10 pb-10 pl-10 ml-20 bg-white flex justify-center gap-10 rounded-md">
@@ -698,7 +708,7 @@
                 </div>
 
                 <!-- This div below holds cards -->
-                <div class="upper-div-cards m-8 ml-10 flex justify-around gap-10">
+                <div class="upper-div-cards m-8 ml-10 flex justify-around gap-10 lg:flex-nowrap md:flex-wrap">
                     
                     <!-- card 1 -->
                     <div class="card bg-pptBlue w-[155px] h-[230px] rounded-md">
@@ -743,7 +753,7 @@
                 </div>
 
                 <!-- This div below holds cards -->
-                <div class="lower-div-cards m-8 ml-10 flex justify-around gap-10">
+                <div class="lower-div-cards m-8 ml-10 flex justify-around gap-10  lg:flex-nowrap md:flex-wrap">
                     
                     <!-- card 1 -->
                     <div class="card bg-pptBlue p-4 w-[155px] h-[230px] rounded-md hover:bg-pptHoverBlue">
@@ -782,7 +792,7 @@
 
     <!-- Footer Begins Here -->
     <footer id="footer-container" class="p-20 flex justify-between items-center bg-offWhite">
-        <div class="app-store-links flex gap-5">
+        <div class="app-store-links flex lg:flex-row gap-5 md:flex-col">
             <h1 class="text-[20px] font-semi-bold">Download Paytm App <br> to pay from anywhere</h1>
             <img src="https://assetscdn1.paytm.com/frontendcommonweb/71229188.svg" alt="apple-app-store-img" class="w-[160px] h-[53px]">
             <img src="https://assetscdn1.paytm.com/frontendcommonweb/33d9d7f1.svg" alt="play-store-img" class="w-[179px] h-[53px]">
@@ -794,5 +804,6 @@
         </div>
     </footer>
     <!-- Footer Ends Here -->
+    
 </body>
 </html>
