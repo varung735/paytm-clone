@@ -1,4 +1,4 @@
-# [Paytm Karo!](paytm-clone-16.netlify.app)
+# [Paytm Karo!](https://paytm-clone-16.netlify.app/)
 
 ![Paytm](./Screenshot.png)
 
